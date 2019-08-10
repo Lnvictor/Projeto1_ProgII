@@ -23,7 +23,7 @@ void addCarta(Baralho *b, Carta *c) {
     b->topo += 1;
 }
 
-//Remove uma carta do topo do Baralho
+//Remove uma carta do topo do Baralho e decrementa topo
 Carta* removeCarta(Baralho *b){
     free(b->c[b->topo]);
     b->topo-=1;
